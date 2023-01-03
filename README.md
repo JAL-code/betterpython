@@ -1,5 +1,5 @@
-# Write Better Python Code
-Personal notes from watched videos produced by ArjanCodes.
+# Write Better Python Code (Notes from the videos.)
+Reviewing my code, I have determined my code needs to develop further. These are personal notes from watched videos produced by ArjanCodes.
 
 This repository contains the code examples from the Write Better Python Code series published on YouTube by ArjanCodes:
 
