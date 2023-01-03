@@ -2,6 +2,7 @@ import string
 import random
 
 class VehicleRegistry:
+    # container for two helper methods
 
     def generate_vehicle_id(self, length):
         return ''.join(random.choices(string.ascii_uppercase, k=length))
@@ -11,6 +12,7 @@ class VehicleRegistry:
 
 
 class Application:
+    #
 
     def register_vehicle(self, brand: string):
         # create a registry instance
@@ -48,4 +50,4 @@ class Application:
         print(f"Payable tax: {payable_tax}")
 
 app = Application()
-app.register_vehicle("Volkswagen ID3")
+app.register_vehicle("BMW 5")

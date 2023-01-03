@@ -1,3 +1,8 @@
+# cohesion = degree to which elements of a function belong together (one task)
+# coupling = measure of how dependent two parts of your code are on each other. 
+#           (only data or move function inside the email object)
+# See structure outline for new data structure.
+
 import string
 import random
 
