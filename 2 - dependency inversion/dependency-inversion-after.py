@@ -1,3 +1,8 @@
+# Dependency inversion: using abstraction.
+# Separate the description, or definition of the interfac,e from the empirical application.
+# ABC [Abstract Base Class] module: Programming language supports both an abstraction method and types.
+# MyPy: checks static type 
+
 from abc import ABC, abstractmethod
 
 
@@ -45,5 +50,9 @@ class ElectricPowerSwitch:
 l = LightBulb()
 f = Fan()
 switch = ElectricPowerSwitch(f)
+switch.press()
+switch.press()
+
+switch = ElectricPowerSwitch(l)
 switch.press()
 switch.press()

@@ -1,3 +1,9 @@
+# SOLID = D: Dependency Inversion
+# Abstract Base Class: MyPI - static checking
+# Abstraction: Separate the description/definition of the interface from the actual implementation
+# List of types
+
+
 class LightBulb:
     def turn_on(self):
         print("LightBulb: turned on...")
@@ -7,8 +13,8 @@ class LightBulb:
 
 
 class ElectricPowerSwitch:
-
-    def __init__(self, l: LightBulb):
+    # The problem with this program is that ElectricPowerSwitch is dependent on LightBulb
+    def __init__(self, l: LightBulb): # last argument in parameter
         self.lightBulb = l
         self.on = False
 
