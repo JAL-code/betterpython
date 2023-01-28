@@ -1,3 +1,5 @@
+# Problem: the CustomerSupport class is too long.
+
 import string
 import random
 from typing import List
@@ -25,6 +27,10 @@ class CustomerSupport:
     def create_ticket(self, customer, issue):
         self.tickets.append(SupportTicket(customer, issue))
 
+    # Problem: process_tickets must be extended to add new if/elif statements.
+    # This is weak cohension: It does too many things. 
+    # Processes the tickets and contains the type of methods for processing.
+    # The classic strategy pattern requires a separate class for each process type.
     def process_tickets(self):
         # if it's empty, don't do anything
         if len(self.tickets) == 0:

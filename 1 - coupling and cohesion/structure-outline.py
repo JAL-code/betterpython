@@ -1,3 +1,6 @@
+# structure-outline
+# Note: this file does not run
+
 import string
 import random
 

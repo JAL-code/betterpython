@@ -1,3 +1,7 @@
+# This method creates a function instead of a class
+# A method without typing the functions was presented but it does not restrict input
+# remove the class and delete self
+# Use typing to enforce a function type (Callable) and list type (List)
 import string
 import random
 from typing import List, Callable
@@ -74,4 +78,12 @@ app.create_ticket("Linus Sebastian", "I can't upload any videos, please help.")
 app.create_ticket("Arjan Egges", "VSCode doesn't automatically solve my bugs.")
 
 # process the tickets
+# Adding a test for each type
+print("Testing Blackhole")
 app.process_tickets(blackHoleOrdering)
+print("Testing FIFO")
+app.process_tickets(fifoOrdering)
+print("Testing FILO")
+app.process_tickets(filoOrdering)
+print("Testing Random List")
+app.process_tickets(randomOrdering)
